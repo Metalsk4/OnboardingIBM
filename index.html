@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Register New User</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  
+</head>
+<body>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                <a class="navbar-brand pull-left" href="#">
+                 <img src="http://houseofbots.com/images/news/2420/cover.png" alt="IBM" style="width:50px;">
+               </a>
+
+               <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Register</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="ViewUsers.html" >View</a>
+                    </li>                    
+                </ul>               
+        </nav>
+        </body>
+        <form onsubmit="">
+            <div class="container-fluid">
+                <!-- <h2 class="text-center">Register New User</h2> -->
+              </br>
+             
+                <div class="row">
+
+                  <div class="col-md-3"></div>
+                  <div class="col-md-6">
+                   <h2 class="text-center">Register New User</h2>
+                   <div><p id="ErrorArea" align="center" class="text-danger" style="background-color: aliceblue"></p></div> 
+                   
+                  <table class="table table-hover table-dark table-striped">
+                    
+                    <tr>
+                      <td><b>First Name</b></td>
+                      <td><input type="text" name="fname" id="FName" class="form-control" required></td>
+                      <td><p class="text-danger" id="fNameErr" style="display:none">*</p></td>
+                    </tr>
+                    <tr>
+                        <td><b>Last Name</b></td>
+                        <td><input type="" name="lname" id="LName" class="form-control" required></td>
+                        <td><p class="text-danger" id="lNameErr" style="display:none">*</p></td>
+                    </tr>
+                    <tr>
+                        <td><b>Email</b></td>
+                        <td><input type="email" name="email" id="Email" class="form-control" required></td>
+                        <td><p class="text-danger" id="emailErr" style="display:none">*</p></td>
+                    </tr> 
+                    <tr>
+                          <td><b>Phone</b></td>
+                          <td><input type="text" name="phone" id="Phone" class="form-control" required maxlength="10" minlength="10"></td>
+                          <td><p class="text-danger" id="phoneErr" style="display:none">*</p></td>
+                    </tr> 
+                    <tr>
+                        <td><b>Employee ID</b></td>
+                        <td><input type="text" name="employeeId" id="UID" class="form-control" required></td>
+                        <td><p class="text-danger" id="eidErr" style="display:none">*</p></td>
+                    </tr> 
+                    <tr>
+                      <td><b>Date of Joining</b></td>
+                      <td><input type="date" name="dateOfJoining" id="DOJ" class="form-control"></td>
+                      <td><p class="text-danger" id="DoJErr" style="display:none">*</p></td>
+                    </tr>
+                    <tr>
+                      <td><b>Previous Location</b></td>
+                      <td>
+                        <select name="selPrevLoc" id="selPLoc" class="form-control">
+                          <option selected value="">Choose here</option>
+                          <option value="Bangalore">Bangalore</option>
+                          <option value="Pune">Pune</option>
+                          <option value="Chennai">Chennai</option>
+                          <option value="Gurugram">Gurugram</option>
+                          <option value="Delhi">Delhi</option>
+                        </select>
+                      </td>
+                      <td><p class="text-danger" id="selPrevErr" style="display:none">*</p></td>
+                    </tr>
+                   
+                  </table>
+                  <div align="center">
+                      <button type="button" class="btn btn-primary" onclick="getFormData()">Submit</button>
+                  </div>
+                  <div class="col-md-3"></div>
+              </div>
+              </div> 
+        </form>
+        
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-bottom">
+           
+        </nav>
+        
+      
+   
+          
+      <script src="main.js"></script>
+</body>
+</html>
